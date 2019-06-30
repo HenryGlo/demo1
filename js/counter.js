@@ -49,6 +49,9 @@ $(document).ready(function () {
     });
     $("body").on("mouseleave", "section#home .container .row .op div", function () {
         $("section#home .container .row .op div").removeClass("outanim");
+        setTimeout(function () {
+            $("section#home .container .row .texto div").html(" ");
+        }, 2000);
     });
 });
 
