@@ -9,12 +9,9 @@ div#preloader {
     height: 100%;
     width: 100%;
 }
-div#preloader .contenedor {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .preloader {
+    margin-left: 50%;
+    margin-top: 50%;
     width: 70px;
     height: 70px;
     border: 10px solid #eee;
