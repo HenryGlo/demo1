@@ -7,14 +7,15 @@ div#preloader {
     position:fixed;
     height:100%;
     width:100%; 
-    background-color:#0C206C;
+    background:#0C206C;
     opacity: 0.95;
     filter: alpha(opacity = 95);
 }
-.preloader {
+div#preloader .pre-ins {
+    height: 100%;
+}
+div#preloader .pre-ins  .preloader {
     z-index:201;
-    margin-left: 50%;
-    margin-top: 20%;
     width: 70px;
     height: 70px;
     border: 10px solid #eee;
@@ -192,10 +193,14 @@ section#str .container .row .item div.ico {
 section#stat {
     background: url("../img/home2.png");
     background-repeat: no-repeat;
+    background-position: center center;
     background-attachment: fixed;
-    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     color:#fff;
-    height: 50vh;
+    padding: 80px 0;
 }
 section#stat #counter {
     height: 100%;
@@ -208,8 +213,113 @@ section#stat .row div.counter-value {
 }
 section#stat .row div.item {
     text-align: center;
+    margin-top:10px;
+}
+section#stat .row div.item hr {
+    border-top:1px dashed transparent;
+    width: 20%;
     transition:all 0.2s ease 0s;
 }
-section#stat .row div.item:hover {
-    margin-bottom: 10px;
+section#stat .row div.item:hover hr {
+    border-top:1px dashed #fff;
 }
+
+section#info {
+    padding: 50px 2%;
+    background:url(../img/pagimg.jpeg);
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:#fff;
+
+}
+section#info h1,
+section#info h5 {
+    color:rgb(205, 205, 206);
+}
+section#info div.info div.item {
+    margin-top:20px;
+    padding: 0;
+    display:flex;
+}
+section#info div.info div.item div.icon {
+    height: 40%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2%;
+}
+section#info div.info div.item div.text {
+    padding: 10px 0;
+}
+section#info .col-left .title {
+    width: 100%;
+}
+section#team {
+    padding: 80px 0;
+}
+section#team div.item {
+    margin-top:10px;
+}
+section#team div.item div.item-cont {
+    padding: 20px 2%;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    border-bottom: 2px solid #0C206C;
+    height: 100%;
+    transition:all 1s ease 0s;
+    cursor: pointer;
+}
+section#team div.item div.item-cont:hover {
+    background: #0C206C;
+    color:#fff;
+    border:2px solid #ffF;
+}
+section#team div.item div.item-cont .title p {
+    font-size: 1rem;
+    font-weight: 700;
+}
+section#team div.item div.item-cont div.icon {
+    height: 80px;
+    border:2px solid #0C206C;
+    margin-bottom: 5px;
+}
+section#team div.item div.item-cont:hover div.icon {
+    border:2px solid #fff;
+}
+section#team div.item div.item-cont div.social {
+    background: #0C206C;
+    width: 100%;
+    padding: 5px 0;
+}
+section#team div.item div.item-cont:hover div.social {
+    background: #fff;
+}
+section#team div.item div.item-cont:hover div.social i {
+    color:#0C206C;
+}
+section#team div.item div.item-cont div.social i {
+    cursor:pointer;
+}
+
+@media (max-width: 768px) { 
+    .navbar {
+        padding: 10px 5%;
+    }
+    .btn-contact {
+        width: 100%;
+    }
+    section#home {
+        padding: 50px 0;
+    }
+    section#home .container .row  div.texto {
+        margin: 10px 0 10px 0;
+        height: 50px;
+    }
+}
+ 

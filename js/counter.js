@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("#preloader").delay(100).fadeOut("slow");
+    $("#preloader").delay(1000).fadeOut("slow");
     var a = 0;
     $(window).scroll(function () {
         var oTop = $('#counter').offset().top - window.innerHeight;
@@ -49,9 +49,6 @@ $(document).ready(function () {
     });
     $("body").on("mouseleave", "section#home .container .row .op div", function () {
         $("section#home .container .row .op div").removeClass("outanim");
-        setTimeout(function () {
-            $("section#home .container .row .texto div").html(" ");
-        }, 2000);
     });
 });
 
