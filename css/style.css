@@ -8,10 +8,11 @@ div#preloader {
     left: 0;
     height: 100%;
     width: 100%;
+}
+div#preloader .contenedor {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 .preloader {
     width: 70px;
