@@ -45,9 +45,10 @@ $(document).ready(function () {
             info = "<h3>Deliveries on the date</h3> <hr/>"
         }
         $("section#home .container .row .texto div").html(info);
+        $("section#home .container .row .op div").addClass("outanim");
     });
     $("body").on("mouseleave", "section#home .container .row .op div", function () {
-        $("section#home .container .row .op div").addClass("outanim");
+        $("section#home .container .row .op div").removeClass("outanim");
     });
 });
 
