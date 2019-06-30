@@ -2,7 +2,7 @@ $(document).ready(function () {
     $("#preloader").delay(1000).fadeOut("slow");
     var a = 0;
     $(window).scroll(function () {
-        var oTop = $('#counter').offset().top - window.innerHeight;
+        var oTop = $('#counter').offset().top - window.innerHeight + 250;
         if (a == 0 && $(window).scrollTop() > oTop) {
             console.log("hola");
             $('.counter-value').each(function () {
