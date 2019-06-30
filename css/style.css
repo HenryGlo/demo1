@@ -110,7 +110,15 @@ section#home .container .row .op div {
     transform-origin: center;
     transition:all 0.3s ease 0s;
 }
-
+section#home .container .row .op div.outanim {
+    border:1px solid #fff;
+    padding: 10px 2%;
+    animation: none;
+}
+section#home .container .row .op div.outanim:hover {
+    transform: scale(1.1);
+    border:1px solid #0C206C;
+}
 @keyframes latidos {
     from { transform: none; }
     50% { 
