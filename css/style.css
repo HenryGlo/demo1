@@ -1,6 +1,6 @@
 body {
     font-family: 'Quicksand', sans-serif;
-
+    overflow-x:hidden;
 }
 div#preloader {
     z-index:200;
@@ -72,6 +72,7 @@ div#preloader .pre-ins  .preloader {
 
 section#home {
     background: url("../img/home.png");
+    background-color: #0C206C;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -192,6 +193,7 @@ section#str .container .row .item div.ico {
 
 section#stat {
     background: url("../img/home2.png");
+    background-color: #0C206C;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -227,6 +229,7 @@ section#stat .row div.item:hover hr {
 section#info {
     padding: 50px 2%;
     background:url(../img/pagimg.jpeg);
+    background-color: #0C206C;
     background-position: center center;
     background-attachment: fixed;
     -webkit-background-size: cover;
@@ -323,3 +326,14 @@ section#team div.item div.item-cont div.social i {
     }
 }
  
+footer {
+    padding: 30px 0;
+    background:url(../img/pagimg.jpeg);
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:#fff; 
+}
