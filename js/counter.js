@@ -32,6 +32,28 @@ $(document).ready(function () {
         }
     });
 
+    var isiPad = navigator.userAgent.match(/iPad/i) != null;
+
+    if (isiPad) {
+        $("body").on("touchstart", "section#home .container .row .op div", function () {
+            var id = $(this).attr("id");
+            var info = " ";
+            if (id == 1) {
+                info = "<h3>Experienced Development Team</h3> <hr/>"
+            } else if (id == 2) {
+                info = "<h3>Customized applications</h3> <hr/>"
+            } else if (id == 3) {
+                info = "<h3>Creative and futuristic design</h3> <hr/>"
+            } else if (id == 4) {
+                info = "<h3>Deliveries on the date</h3> <hr/>"
+            }
+            $("section#home .container .row .texto div").html(info);
+            $("section#home .container .row .op div").addClass("outanim");
+        });
+        $("body").on("touchend", "section#home .container .row .op div", function () {
+            $("section#home .container .row .op div").removeClass("outanim");
+        });
+    }
     $("body").on("mouseenter", "section#home .container .row .op div", function () {
         var id = $(this).attr("id");
         var info = " ";
