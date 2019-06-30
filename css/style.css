@@ -3,19 +3,22 @@ body {
 
 }
 div#preloader {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+    z-index:200;
+    position:fixed;
+    height:100%;
+    width:100%; 
+    background-color:#0C206C;
+    opacity: 0.95;
+    filter: alpha(opacity = 95);
 }
 .preloader {
+    z-index:201;
     margin-left: 50%;
-    margin-top: 50%;
+    margin-top: 20%;
     width: 70px;
     height: 70px;
     border: 10px solid #eee;
-    border-top: 10px solid #666;
+    border-top: 10px solid #fff;
     border-radius: 50%;
     animation-name: girar;
     animation-duration: 2s;

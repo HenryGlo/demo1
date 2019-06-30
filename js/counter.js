@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("#preloader").fadeOut("fast");
+    $("#preloader").delay(100).fadeOut("slow");
     var a = 0;
     $(window).scroll(function () {
         var oTop = $('#counter').offset().top - window.innerHeight;
